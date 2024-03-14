@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D2C456DB6A47DB96B1D4C2 /* Pods_Cloudless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D47757DC65E8767E317132D /* Pods_Cloudless.framework */; };
+		4ACB9128CE973D77CD07CECF /* Pods_Cloudless_CloudlessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB989C12A47C68068B9F4EED /* Pods_Cloudless_CloudlessUITests.framework */; };
+		4F896B833E6310D26BF99923 /* Pods_CloudlessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84D4726C08705C4AC0D4D0C /* Pods_CloudlessTests.framework */; };
+		BF74CB0C2B6F084800E40C6C /* ProfileOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74CB0B2B6F084800E40C6C /* ProfileOptionsTableViewController.swift */; };
+		BF74CB0F2B6F088100E40C6C /* ProfileOptionsTableViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74CB0E2B6F088100E40C6C /* ProfileOptionsTableViewController+UI.swift */; };
+		BF74CB112B6F08B900E40C6C /* SubmitNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74CB102B6F08B900E40C6C /* SubmitNumberViewController.swift */; };
+		BF74CB142B6F08F000E40C6C /* SubmitNumberViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74CB132B6F08F000E40C6C /* SubmitNumberViewController+UI.swift */; };
+		BF7E880B2B6743C5003AFDC3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E880A2B6743C5003AFDC3 /* Api.swift */; };
+		BF7E880D2B6743DF003AFDC3 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E880C2B6743DF003AFDC3 /* Ref.swift */; };
+		BF7E880F2B674444003AFDC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E880E2B674444003AFDC3 /* User.swift */; };
+		BF7E88112B67445D003AFDC3 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88102B67445D003AFDC3 /* UserApi.swift */; };
+		BF7E88142B6744A8003AFDC3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88132B6744A8003AFDC3 /* HomeViewController.swift */; };
+		BF7E88172B6744F4003AFDC3 /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88162B6744F4003AFDC3 /* HomeViewController+UI.swift */; };
+		BF7E88192B674518003AFDC3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88182B674518003AFDC3 /* SignInViewController.swift */; };
+		BF7E881B2B674530003AFDC3 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E881A2B674530003AFDC3 /* SignInViewController+UI.swift */; };
+		BF7E881D2B67454A003AFDC3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E881C2B67454A003AFDC3 /* SignUpViewController.swift */; };
+		BF7E881F2B674565003AFDC3 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E881E2B674565003AFDC3 /* SignUpViewController+UI.swift */; };
+		BF7E88212B6745C3003AFDC3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88202B6745C3003AFDC3 /* ForgotPasswordViewController.swift */; };
+		BF7E88232B6745DF003AFDC3 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E88222B6745DF003AFDC3 /* ForgotPasswordViewController+UI.swift */; };
+		BF7E88252B674729003AFDC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF7E88242B674729003AFDC3 /* GoogleService-Info.plist */; };
+		BFA929C92B6EE0160089D7B9 /* SearchNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA929C82B6EE0160089D7B9 /* SearchNumberViewController.swift */; };
+		BFA929CC2B6EE0690089D7B9 /* SearchNumberViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA929CB2B6EE0690089D7B9 /* SearchNumberViewController+UI.swift */; };
+		BFA929CE2B6EE5F10089D7B9 /* SubmittedNumberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA929CD2B6EE5F10089D7B9 /* SubmittedNumberAPI.swift */; };
+		BFA929D02B6EE60F0089D7B9 /* SubmittedNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA929CF2B6EE60F0089D7B9 /* SubmittedNumber.swift */; };
+		BFCF45DE2B622B04000D676F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF45DD2B622B04000D676F /* AppDelegate.swift */; };
+		BFCF45E02B622B04000D676F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF45DF2B622B04000D676F /* SceneDelegate.swift */; };
+		BFCF45E52B622B04000D676F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCF45E32B622B04000D676F /* Main.storyboard */; };
+		BFCF45E82B622B04000D676F /* Cloudless.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFCF45E62B622B04000D676F /* Cloudless.xcdatamodeld */; };
+		BFCF45EA2B622B08000D676F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCF45E92B622B08000D676F /* Assets.xcassets */; };
+		BFCF45ED2B622B08000D676F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCF45EB2B622B08000D676F /* LaunchScreen.storyboard */; };
+		BFCF45F82B622B09000D676F /* CloudlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF45F72B622B09000D676F /* CloudlessTests.swift */; };
+		BFCF46022B622B09000D676F /* CloudlessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF46012B622B09000D676F /* CloudlessUITests.swift */; };
+		BFCF46042B622B09000D676F /* CloudlessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF46032B622B09000D676F /* CloudlessUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFCF45F42B622B09000D676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCF45D22B622B04000D676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCF45D92B622B04000D676F;
+			remoteInfo = Cloudless;
+		};
+		BFCF45FE2B622B09000D676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCF45D22B622B04000D676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCF45D92B622B04000D676F;
+			remoteInfo = Cloudless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D47757DC65E8767E317132D /* Pods_Cloudless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEF3E5834E6EBF5ACCAA6F7 /* Pods-Cloudless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudless.debug.xcconfig"; path = "Target Support Files/Pods-Cloudless/Pods-Cloudless.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB339DC32EF1DD9127C78CC /* Pods-Cloudless-CloudlessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudless-CloudlessUITests.release.xcconfig"; path = "Target Support Files/Pods-Cloudless-CloudlessUITests/Pods-Cloudless-CloudlessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B84D4726C08705C4AC0D4D0C /* Pods_CloudlessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudlessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF74CB0B2B6F084800E40C6C /* ProfileOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsTableViewController.swift; sourceTree = "<group>"; };
+		BF74CB0E2B6F088100E40C6C /* ProfileOptionsTableViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileOptionsTableViewController+UI.swift"; sourceTree = "<group>"; };
+		BF74CB102B6F08B900E40C6C /* SubmitNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNumberViewController.swift; sourceTree = "<group>"; };
+		BF74CB132B6F08F000E40C6C /* SubmitNumberViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubmitNumberViewController+UI.swift"; sourceTree = SOURCE_ROOT; };
+		BF7E880A2B6743C5003AFDC3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		BF7E880C2B6743DF003AFDC3 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		BF7E880E2B674444003AFDC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF7E88102B67445D003AFDC3 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		BF7E88132B6744A8003AFDC3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF7E88162B6744F4003AFDC3 /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
+		BF7E88182B674518003AFDC3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BF7E881A2B674530003AFDC3 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		BF7E881C2B67454A003AFDC3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF7E881E2B674565003AFDC3 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		BF7E88202B6745C3003AFDC3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		BF7E88222B6745DF003AFDC3 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		BF7E88242B674729003AFDC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFA929C82B6EE0160089D7B9 /* SearchNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNumberViewController.swift; sourceTree = "<group>"; };
+		BFA929CB2B6EE0690089D7B9 /* SearchNumberViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchNumberViewController+UI.swift"; sourceTree = "<group>"; };
+		BFA929CD2B6EE5F10089D7B9 /* SubmittedNumberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmittedNumberAPI.swift; sourceTree = "<group>"; };
+		BFA929CF2B6EE60F0089D7B9 /* SubmittedNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmittedNumber.swift; sourceTree = "<group>"; };
+		BFCF45DA2B622B04000D676F /* Cloudless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloudless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCF45DD2B622B04000D676F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFCF45DF2B622B04000D676F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFCF45E42B622B04000D676F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFCF45E72B622B04000D676F /* Cloudless.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cloudless.xcdatamodel; sourceTree = "<group>"; };
+		BFCF45E92B622B08000D676F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFCF45EC2B622B08000D676F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFCF45EE2B622B08000D676F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCF45F32B622B09000D676F /* CloudlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCF45F72B622B09000D676F /* CloudlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudlessTests.swift; sourceTree = "<group>"; };
+		BFCF45FD2B622B09000D676F /* CloudlessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudlessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCF46012B622B09000D676F /* CloudlessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudlessUITests.swift; sourceTree = "<group>"; };
+		BFCF46032B622B09000D676F /* CloudlessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudlessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4550E896D974424CB38D3A0 /* Pods-CloudlessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudlessTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudlessTests/Pods-CloudlessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6620BC8F41A9DB243E96B1F /* Pods-CloudlessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudlessTests.release.xcconfig"; path = "Target Support Files/Pods-CloudlessTests/Pods-CloudlessTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8529377B4F8402404C44442 /* Pods-Cloudless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudless.release.xcconfig"; path = "Target Support Files/Pods-Cloudless/Pods-Cloudless.release.xcconfig"; sourceTree = "<group>"; };
+		DB989C12A47C68068B9F4EED /* Pods_Cloudless_CloudlessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudless_CloudlessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E9BF98689C02089B095848 /* Pods-Cloudless-CloudlessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudless-CloudlessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cloudless-CloudlessUITests/Pods-Cloudless-CloudlessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFCF45D72B622B04000D676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D2C456DB6A47DB96B1D4C2 /* Pods_Cloudless.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45F02B622B09000D676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F896B833E6310D26BF99923 /* Pods_CloudlessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45FA2B622B09000D676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACB9128CE973D77CD07CECF /* Pods_Cloudless_CloudlessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20A2F41F3F08FDF094D38118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D47757DC65E8767E317132D /* Pods_Cloudless.framework */,
+				DB989C12A47C68068B9F4EED /* Pods_Cloudless_CloudlessUITests.framework */,
+				B84D4726C08705C4AC0D4D0C /* Pods_CloudlessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7BB6520C78355F38E80021A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AEF3E5834E6EBF5ACCAA6F7 /* Pods-Cloudless.debug.xcconfig */,
+				D8529377B4F8402404C44442 /* Pods-Cloudless.release.xcconfig */,
+				F7E9BF98689C02089B095848 /* Pods-Cloudless-CloudlessUITests.debug.xcconfig */,
+				7FB339DC32EF1DD9127C78CC /* Pods-Cloudless-CloudlessUITests.release.xcconfig */,
+				C4550E896D974424CB38D3A0 /* Pods-CloudlessTests.debug.xcconfig */,
+				D6620BC8F41A9DB243E96B1F /* Pods-CloudlessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF74CB0D2B6F085800E40C6C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BF74CB0B2B6F084800E40C6C /* ProfileOptionsTableViewController.swift */,
+				BF74CB0E2B6F088100E40C6C /* ProfileOptionsTableViewController+UI.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BF74CB122B6F08C700E40C6C /* Submit Number */ = {
+			isa = PBXGroup;
+			children = (
+				BF74CB102B6F08B900E40C6C /* SubmitNumberViewController.swift */,
+				BF74CB132B6F08F000E40C6C /* SubmitNumberViewController+UI.swift */,
+			);
+			path = "Submit Number";
+			sourceTree = "<group>";
+		};
+		BF7E88122B67446C003AFDC3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E880A2B6743C5003AFDC3 /* Api.swift */,
+				BF7E880C2B6743DF003AFDC3 /* Ref.swift */,
+				BF7E880E2B674444003AFDC3 /* User.swift */,
+				BF7E88102B67445D003AFDC3 /* UserApi.swift */,
+				BFA929CF2B6EE60F0089D7B9 /* SubmittedNumber.swift */,
+				BFA929CD2B6EE5F10089D7B9 /* SubmittedNumberAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BF7E88152B6744CA003AFDC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E88132B6744A8003AFDC3 /* HomeViewController.swift */,
+				BF7E88162B6744F4003AFDC3 /* HomeViewController+UI.swift */,
+				BF7E88182B674518003AFDC3 /* SignInViewController.swift */,
+				BF7E881A2B674530003AFDC3 /* SignInViewController+UI.swift */,
+				BF7E881C2B67454A003AFDC3 /* SignUpViewController.swift */,
+				BF7E881E2B674565003AFDC3 /* SignUpViewController+UI.swift */,
+				BF7E88202B6745C3003AFDC3 /* ForgotPasswordViewController.swift */,
+				BF7E88222B6745DF003AFDC3 /* ForgotPasswordViewController+UI.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BFA929CA2B6EE0250089D7B9 /* Search Number */ = {
+			isa = PBXGroup;
+			children = (
+				BFA929C82B6EE0160089D7B9 /* SearchNumberViewController.swift */,
+				BFA929CB2B6EE0690089D7B9 /* SearchNumberViewController+UI.swift */,
+			);
+			path = "Search Number";
+			sourceTree = "<group>";
+		};
+		BFCF45D12B622B04000D676F = {
+			isa = PBXGroup;
+			children = (
+				BFCF45DC2B622B04000D676F /* Cloudless */,
+				BFCF45F62B622B09000D676F /* CloudlessTests */,
+				BFCF46002B622B09000D676F /* CloudlessUITests */,
+				BFCF45DB2B622B04000D676F /* Products */,
+				B7BB6520C78355F38E80021A /* Pods */,
+				20A2F41F3F08FDF094D38118 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFCF45DB2B622B04000D676F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF45DA2B622B04000D676F /* Cloudless.app */,
+				BFCF45F32B622B09000D676F /* CloudlessTests.xctest */,
+				BFCF45FD2B622B09000D676F /* CloudlessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFCF45DC2B622B04000D676F /* Cloudless */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF45DD2B622B04000D676F /* AppDelegate.swift */,
+				BFCF45DF2B622B04000D676F /* SceneDelegate.swift */,
+				BFCF45E32B622B04000D676F /* Main.storyboard */,
+				BF7E88122B67446C003AFDC3 /* API */,
+				BF7E88152B6744CA003AFDC3 /* Home */,
+				BF74CB0D2B6F085800E40C6C /* Profile */,
+				BFA929CA2B6EE0250089D7B9 /* Search Number */,
+				BF74CB122B6F08C700E40C6C /* Submit Number */,
+				BFCF45E92B622B08000D676F /* Assets.xcassets */,
+				BFCF45EB2B622B08000D676F /* LaunchScreen.storyboard */,
+				BFCF45EE2B622B08000D676F /* Info.plist */,
+				BF7E88242B674729003AFDC3 /* GoogleService-Info.plist */,
+				BFCF45E62B622B04000D676F /* Cloudless.xcdatamodeld */,
+			);
+			path = Cloudless;
+			sourceTree = "<group>";
+		};
+		BFCF45F62B622B09000D676F /* CloudlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF45F72B622B09000D676F /* CloudlessTests.swift */,
+			);
+			path = CloudlessTests;
+			sourceTree = "<group>";
+		};
+		BFCF46002B622B09000D676F /* CloudlessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF46012B622B09000D676F /* CloudlessUITests.swift */,
+				BFCF46032B622B09000D676F /* CloudlessUITestsLaunchTests.swift */,
+			);
+			path = CloudlessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFCF45D92B622B04000D676F /* Cloudless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCF46072B622B09000D676F /* Build configuration list for PBXNativeTarget "Cloudless" */;
+			buildPhases = (
+				A40091FCDE53FBB60A5BD70A /* [CP] Check Pods Manifest.lock */,
+				BFCF45D62B622B04000D676F /* Sources */,
+				BFCF45D72B622B04000D676F /* Frameworks */,
+				BFCF45D82B622B04000D676F /* Resources */,
+				1C39AAE0095A9BD3C4F1FB73 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cloudless;
+			productName = Cloudless;
+			productReference = BFCF45DA2B622B04000D676F /* Cloudless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFCF45F22B622B09000D676F /* CloudlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCF460A2B622B09000D676F /* Build configuration list for PBXNativeTarget "CloudlessTests" */;
+			buildPhases = (
+				B5C579B8CAD35C05580A72B3 /* [CP] Check Pods Manifest.lock */,
+				BFCF45EF2B622B09000D676F /* Sources */,
+				BFCF45F02B622B09000D676F /* Frameworks */,
+				BFCF45F12B622B09000D676F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCF45F52B622B09000D676F /* PBXTargetDependency */,
+			);
+			name = CloudlessTests;
+			productName = CloudlessTests;
+			productReference = BFCF45F32B622B09000D676F /* CloudlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFCF45FC2B622B09000D676F /* CloudlessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCF460D2B622B09000D676F /* Build configuration list for PBXNativeTarget "CloudlessUITests" */;
+			buildPhases = (
+				586C4EE873D10A8C4621F2E2 /* [CP] Check Pods Manifest.lock */,
+				BFCF45F92B622B09000D676F /* Sources */,
+				BFCF45FA2B622B09000D676F /* Frameworks */,
+				BFCF45FB2B622B09000D676F /* Resources */,
+				7D3AF1AC99A1987127B74CC6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCF45FF2B622B09000D676F /* PBXTargetDependency */,
+			);
+			name = CloudlessUITests;
+			productName = CloudlessUITests;
+			productReference = BFCF45FD2B622B09000D676F /* CloudlessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFCF45D22B622B04000D676F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BFCF45D92B622B04000D676F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BFCF45F22B622B09000D676F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFCF45D92B622B04000D676F;
+					};
+					BFCF45FC2B622B09000D676F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFCF45D92B622B04000D676F;
+					};
+				};
+			};
+			buildConfigurationList = BFCF45D52B622B04000D676F /* Build configuration list for PBXProject "Cloudless" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFCF45D12B622B04000D676F;
+			productRefGroup = BFCF45DB2B622B04000D676F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFCF45D92B622B04000D676F /* Cloudless */,
+				BFCF45F22B622B09000D676F /* CloudlessTests */,
+				BFCF45FC2B622B09000D676F /* CloudlessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFCF45D82B622B04000D676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCF45ED2B622B08000D676F /* LaunchScreen.storyboard in Resources */,
+				BF7E88252B674729003AFDC3 /* GoogleService-Info.plist in Resources */,
+				BFCF45EA2B622B08000D676F /* Assets.xcassets in Resources */,
+				BFCF45E52B622B04000D676F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45F12B622B09000D676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45FB2B622B09000D676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C39AAE0095A9BD3C4F1FB73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudless/Pods-Cloudless-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudless/Pods-Cloudless-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cloudless/Pods-Cloudless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		586C4EE873D10A8C4621F2E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cloudless-CloudlessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D3AF1AC99A1987127B74CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudless-CloudlessUITests/Pods-Cloudless-CloudlessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudless-CloudlessUITests/Pods-Cloudless-CloudlessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cloudless-CloudlessUITests/Pods-Cloudless-CloudlessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40091FCDE53FBB60A5BD70A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cloudless-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C579B8CAD35C05580A72B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudlessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFCF45D62B622B04000D676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E881B2B674530003AFDC3 /* SignInViewController+UI.swift in Sources */,
+				BF7E88192B674518003AFDC3 /* SignInViewController.swift in Sources */,
+				BFA929C92B6EE0160089D7B9 /* SearchNumberViewController.swift in Sources */,
+				BF7E881F2B674565003AFDC3 /* SignUpViewController+UI.swift in Sources */,
+				BFCF45E82B622B04000D676F /* Cloudless.xcdatamodeld in Sources */,
+				BF7E88112B67445D003AFDC3 /* UserApi.swift in Sources */,
+				BF74CB0C2B6F084800E40C6C /* ProfileOptionsTableViewController.swift in Sources */,
+				BF7E88172B6744F4003AFDC3 /* HomeViewController+UI.swift in Sources */,
+				BF74CB142B6F08F000E40C6C /* SubmitNumberViewController+UI.swift in Sources */,
+				BFA929CE2B6EE5F10089D7B9 /* SubmittedNumberAPI.swift in Sources */,
+				BFCF45DE2B622B04000D676F /* AppDelegate.swift in Sources */,
+				BF74CB112B6F08B900E40C6C /* SubmitNumberViewController.swift in Sources */,
+				BF7E880B2B6743C5003AFDC3 /* Api.swift in Sources */,
+				BF7E88142B6744A8003AFDC3 /* HomeViewController.swift in Sources */,
+				BFCF45E02B622B04000D676F /* SceneDelegate.swift in Sources */,
+				BFA929CC2B6EE0690089D7B9 /* SearchNumberViewController+UI.swift in Sources */,
+				BF7E88212B6745C3003AFDC3 /* ForgotPasswordViewController.swift in Sources */,
+				BFA929D02B6EE60F0089D7B9 /* SubmittedNumber.swift in Sources */,
+				BF74CB0F2B6F088100E40C6C /* ProfileOptionsTableViewController+UI.swift in Sources */,
+				BF7E88232B6745DF003AFDC3 /* ForgotPasswordViewController+UI.swift in Sources */,
+				BF7E880D2B6743DF003AFDC3 /* Ref.swift in Sources */,
+				BF7E881D2B67454A003AFDC3 /* SignUpViewController.swift in Sources */,
+				BF7E880F2B674444003AFDC3 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45EF2B622B09000D676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCF45F82B622B09000D676F /* CloudlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCF45F92B622B09000D676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCF46022B622B09000D676F /* CloudlessUITests.swift in Sources */,
+				BFCF46042B622B09000D676F /* CloudlessUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFCF45F52B622B09000D676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCF45D92B622B04000D676F /* Cloudless */;
+			targetProxy = BFCF45F42B622B09000D676F /* PBXContainerItemProxy */;
+		};
+		BFCF45FF2B622B09000D676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCF45D92B622B04000D676F /* Cloudless */;
+			targetProxy = BFCF45FE2B622B09000D676F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFCF45E32B622B04000D676F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCF45E42B622B04000D676F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFCF45EB2B622B08000D676F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCF45EC2B622B08000D676F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFCF46052B622B09000D676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFCF46062B622B09000D676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFCF46082B622B09000D676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEF3E5834E6EBF5ACCAA6F7 /* Pods-Cloudless.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cloudless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cloudless;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.04;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.Cloudless.App;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFCF46092B622B09000D676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8529377B4F8402404C44442 /* Pods-Cloudless.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cloudless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cloudless;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.04;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.Cloudless.App;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFCF460B2B622B09000D676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4550E896D974424CB38D3A0 /* Pods-CloudlessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.CloudlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudless.app/Cloudless";
+			};
+			name = Debug;
+		};
+		BFCF460C2B622B09000D676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6620BC8F41A9DB243E96B1F /* Pods-CloudlessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.CloudlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudless.app/Cloudless";
+			};
+			name = Release;
+		};
+		BFCF460E2B622B09000D676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E9BF98689C02089B095848 /* Pods-Cloudless-CloudlessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.CloudlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cloudless;
+			};
+			name = Debug;
+		};
+		BFCF460F2B622B09000D676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB339DC32EF1DD9127C78CC /* Pods-Cloudless-CloudlessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.CloudlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cloudless;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFCF45D52B622B04000D676F /* Build configuration list for PBXProject "Cloudless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCF46052B622B09000D676F /* Debug */,
+				BFCF46062B622B09000D676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCF46072B622B09000D676F /* Build configuration list for PBXNativeTarget "Cloudless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCF46082B622B09000D676F /* Debug */,
+				BFCF46092B622B09000D676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCF460A2B622B09000D676F /* Build configuration list for PBXNativeTarget "CloudlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCF460B2B622B09000D676F /* Debug */,
+				BFCF460C2B622B09000D676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCF460D2B622B09000D676F /* Build configuration list for PBXNativeTarget "CloudlessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCF460E2B622B09000D676F /* Debug */,
+				BFCF460F2B622B09000D676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFCF45E62B622B04000D676F /* Cloudless.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFCF45E72B622B04000D676F /* Cloudless.xcdatamodel */,
+			);
+			currentVersion = BFCF45E72B622B04000D676F /* Cloudless.xcdatamodel */;
+			path = Cloudless.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFCF45D22B622B04000D676F /* Project object */;
+}
